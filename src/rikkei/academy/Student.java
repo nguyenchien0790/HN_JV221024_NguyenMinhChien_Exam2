@@ -126,9 +126,9 @@ public class Student {
 
 
         do {
-            System.out.println("Nhập tên sinh viên : ");
+            System.out.println("Nhập tên sinh viên (phải từ 8 đến 50 ký tự): ");
             this.studentName = scanner.nextLine();
-        }while (this.studentName.length()<20 || this.studentName.length()>50);
+        }while (this.studentName.length()<8 || this.studentName.length()>50);
 
         do {
             System.out.println("Nhập tuổi sinh viên (>= 18) : ");
@@ -139,9 +139,9 @@ public class Student {
         this.sex = scanner.nextLine();
 
         do {
-            System.out.println("Nhập số điện thoai của sinh viên (chỉ nhận 10 số bắt đầu từ 0) : ");
+            System.out.println("Nhập số điện thoai của sinh viên (chỉ nhận 10 số và bắt đầu từ 0) : ");
             this.phone = scanner.nextLine();
-        }while (this.phone.length()==10);
+        }while (this.phone.length()==11);
 
         System.out.println("Nhập địa chỉ sinh viên : ");
         this.address = scanner.nextLine();
